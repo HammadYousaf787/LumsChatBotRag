@@ -1,0 +1,25 @@
+﻿version: '3.8'
+
+services:
+  lums-rag:
+    build: .
+    container_name: lums-rag
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./chroma_db:/app/chroma_db
+      - ./logs:/app/logs
+    environment:
+      - GROQ_API_KEY=
+      - CHROMA_DIR=/app/chroma_db
+      - DATA_DIR=/app/data
+      - LOG_LEVEL=INFO
+      - PRODUCTION=true
+    networks:
+      - lums-network
+
+networks:
+  lums-network:
+    driver: bridge

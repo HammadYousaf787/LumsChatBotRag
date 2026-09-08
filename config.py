@@ -1,0 +1,7 @@
+﻿GROQ_API_KEY = "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"
+CHROMA_DIR = "chroma_db"
+DATA_DIR = "data"
+DEFAULT_MODEL = "llama-3.3-70b-versatile"
+DEFAULT_TEMPERATURE = 0.3
+DEFAULT_MAX_TOKENS = 500
+LOG_LEVEL = "INFO"
