@@ -9,4 +9,3 @@ This system provides an intelligent assistant that can answer questions about LU
 - Course Memos (Excel files)
 - Course Schedules (Excel files)
 
-## 🏗️ Architecture

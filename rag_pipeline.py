@@ -24,7 +24,7 @@ except (ImportError, ValueError, SyntaxError) as e:
     
     # Fallback config
     class config:
-        GROQ_API_KEY = "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"
+        GROQ_API_KEY = "-"
         CHROMA_DIR = "chroma_db"
         DATA_DIR = "data"
         DEFAULT_MODEL = "llama-3.3-70b-versatile"
